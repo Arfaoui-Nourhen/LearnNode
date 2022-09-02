@@ -1,4 +1,5 @@
 const { readFile, writeFile } = require('fs')
+//const { readFile, writeFile } = require('fs').promises  ==> this line is equal to promises+reject+resolve
 
 readFile('./content/first.txt', 'utf8', (err, result_fi) => {
   if (err) {
